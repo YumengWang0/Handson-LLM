@@ -31,6 +31,14 @@ These Jupyter notebooks cover hands-on implementation and core concepts of Large
 
 ---
 
+#### 3.5 Tools techniques related 
+
+
+
+---
+
+
+
 #### 4. RAG (Retrieval-Augmented Generation)
 - Embeddings + Vector database (e.g., ChromaDB)
 - Retriever + Generator pipeline
