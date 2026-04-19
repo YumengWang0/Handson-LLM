@@ -71,3 +71,74 @@ These Jupyter notebooks cover hands-on implementation and core concepts of Large
 - Prompt sensitivity
 - Evaluation metrics (BLEU, ROUGE, human eval)
 - Error analysis & improvement loop
+
+
+---- 
+
+
+## 📌 Extension: Multimodal Exercises
+
+This section extends the LLM pipeline to multimodal settings, where models process and reason over both text and visual inputs.
+
+### 🖼️ Core Concepts
+- Vision-Language Models (VLMs)
+- Cross-modal alignment (image ↔ text embedding space)
+- Fusion strategies (early fusion vs late fusion)
+- Contrastive learning (e.g., CLIP-style training)
+
+---
+
+### 🧪 Hands-on Exercises
+
+#### 1. Image Captioning
+- Model: BLIP / Vision Encoder + Text Decoder
+- Task: Generate textual descriptions from images
+- Key Idea: Visual features → language generation
+
+#### 2. Visual Question Answering (VQA)
+- Input: Image + Question
+- Output: Answer
+- Focus:
+  - Cross-attention between image and text
+  - Multi-step reasoning
+
+#### 3. Image-Text Retrieval
+- Task: Retrieve relevant images given text (or vice versa)
+- Method:
+  - Encode image and text into shared embedding space
+  - Similarity search (cosine similarity)
+
+#### 4. Multimodal RAG
+- Combine:
+  - Image encoder + text embeddings
+  - Vector DB (store both modalities)
+- Pipeline:
+  - Query → retrieve (image + text) → LLM → answer
+
+---
+
+### ⚙️ Implementation Details
+- Libraries:
+  - HuggingFace Transformers
+  - OpenAI CLIP / BLIP
+  - PyTorch
+
+- Key Components:
+  - Image encoder (ViT / CNN)
+  - Text encoder (Transformer)
+  - Cross-attention layers
+
+---
+
+### 🚀 Challenges & Insights
+- Modality gap (image vs text representation mismatch)
+- Data alignment quality is critical
+- Computational cost is higher than text-only models
+- Prompt design becomes more complex (image + text context)
+
+---
+
+### 📈 Possible Improvements
+- Fine-tune VLM on domain-specific datasets
+- Use larger pretrained models (e.g., BLIP-2, Flamingo)
+- Combine multimodal inputs with agent-based reasoning
