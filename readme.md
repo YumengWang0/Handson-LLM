@@ -29,15 +29,8 @@ These Jupyter notebooks cover hands-on implementation and core concepts of Large
 - Dataset formatting (prompt → conversational format)
 - Trainer setup (HuggingFace / TRL)
 
----
-
-#### 3.5 Tools techniques related 
-
-
 
 ---
-
-
 
 #### 4. RAG (Retrieval-Augmented Generation)
 - Embeddings + Vector database (e.g., ChromaDB)
@@ -47,6 +40,14 @@ These Jupyter notebooks cover hands-on implementation and core concepts of Large
 - Multi-document reasoning
 
 ---
+
+
+#### 4.5 Tools techniques related, both API and transformer can call this function.
+- 
+
+
+
+
 
 #### 5. Multimodal LLMs
 - Image + Text models (e.g., BLIP)
@@ -97,6 +98,7 @@ This section extends the LLM pipeline to multimodal settings, where models proce
 ---
 
 ### 🧪 Hands-on Exercises
+
 
 #### 1. Image Captioning
 - Model: BLIP / Vision Encoder + Text Decoder
